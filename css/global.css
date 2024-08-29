@@ -1,0 +1,55 @@
+html, body, h1, h2, p, span, h3 {
+    margin: 0;
+    padding: 0;
+}
+a, ul, li {
+    text-decoration: none;
+    list-style: none;
+}
+body, html {
+    background: url("Frame\ 2.png") no-repeat fixed;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+
+.container {
+    height: 100vh;
+    display: grid;
+    justify-content:center;
+    align-items: center;
+}
+
+.card-leitura {
+    position: relative;
+    border: 1px solid white;
+    border-radius: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    height: 250px;
+    width: 350px; /* 340px em 16px de font-size */
+}
+
+.esquerdo {
+    height: 100%;
+    width: 175px;
+}
+.esquerdo img {
+    border-radius: 33px;
+    width: auto;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: fill;
+}
+.direito {
+   
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 100%;
+    width: 175px;
+    font-size: 8px;
+    color: white;
+}
+
