@@ -1,16 +1,21 @@
-html, body, h1, h2, p, span, h3 {
+body, html {
+    background: url("Frame\ 2.png") no-repeat fixed;
+    background-size: cover;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+html, body, h1, h2, h3, h5, p, span, h3 {
     margin: 0;
     padding: 0;
+   
+    
 }
 a, ul, li {
     text-decoration: none;
     list-style: none;
 }
-body, html {
-    background: url("Frame\ 2.png") no-repeat fixed;
-    background-size: cover;
-    box-sizing: border-box;
-}
+
 
 
 .container {
@@ -21,6 +26,7 @@ body, html {
 }
 
 .card-leitura {
+    font-size: 1px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -28,13 +34,16 @@ body, html {
     border-radius: 33px;
     justify-content: center;
     height: 500px;
-    width: 250px; /* 340px em 16px de font-size */
+    width: 360px; /* 340px em 16px de font-size */
 }
 
 .esquerdo {
+  
     height: 100%;
+    
 }
 .esquerdo img {
+
     border-radius: 33px;
     width: auto;
     height: 100%;
@@ -42,12 +51,50 @@ body, html {
     max-width: 100%;
     object-fit: fill;
 }
-.direito {
-    margin-top: 10px;
-    margin-left: 10px;
-    height: 100%;
-    width: 175px;
+.wrapper-direito {
+   
+    line-height: 28px;
+    margin-top: 20px;
+    z-index: 2;
+    margin-left: 50px;
+    margin-bottom: 0px;
     font-size: 8px;
     color: white;
+}
+.wrapper-direito p {
+    color: rgb(131, 134, 134);
+    font-size: 12px;
+}
+.wrapper-direito h5 {
+    font-size: 14px;
+    color: rgb(189, 194, 194);
+}
+.wrapper-direito h3 {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+.direito {
+    border-radius: 33px;
+   
+    position: absolute;
+    background-image: linear-gradient(
+        45deg,
+        hsl(240deg 100% 20%) 0%,
+        hsl(289deg 100% 21%) 11%,
+        hsl(315deg 100% 27%) 22%,
+        hsl(329deg 100% 36%) 33%,
+        hsl(337deg 100% 43%) 44%,
+        hsl(357deg 91% 59%) 56%,
+        hsl(17deg 100% 59%) 67%,
+        hsl(34deg 100% 53%) 78%,
+        hsl(45deg 100% 50%) 89%,
+        hsl(55deg 100% 50%) 100%
+      );
+    z-index: 1;
+    width: 100%;
+    bottom: 0px;
+    height: 250px;
+    
+    
 }
 
