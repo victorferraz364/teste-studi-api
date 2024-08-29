@@ -22,18 +22,17 @@ body, html {
 
 .card-leitura {
     position: relative;
+    display: flex;
+    flex-direction: column;
     border: 1px solid white;
     border-radius: 33px;
-    display: flex;
     justify-content: center;
-    align-items: self-start;
-    height: 250px;
-    width: 350px; /* 340px em 16px de font-size */
+    height: 500px;
+    width: 250px; /* 340px em 16px de font-size */
 }
 
 .esquerdo {
     height: 100%;
-    width: 175px;
 }
 .esquerdo img {
     border-radius: 33px;
@@ -44,7 +43,6 @@ body, html {
     object-fit: fill;
 }
 .direito {
-   
     margin-top: 10px;
     margin-left: 10px;
     height: 100%;
