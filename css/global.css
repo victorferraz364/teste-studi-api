@@ -1,106 +1,93 @@
-body, html {
+
+body {
+    height: 100vh;
     background: url("Frame\ 2.png") no-repeat fixed;
     background-size: cover;
-    box-sizing: border-box;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+    box-sizing: border-box;
+  
 }
-html, body, h1, h2, h3, h5, p, span, h3 {
+html, body {
     margin: 0;
     padding: 0;
-   
-    
 }
-a, ul, li {
+img, h1, h2, h3, h4, h5, h6, p, ul, li, nav {
+    margin: 0;
+    padding: 0;
+}
+li, a {
     text-decoration: none;
     list-style: none;
 }
 
-
-
-.container {
-    height: 100vh;
+.leituras-section {
     display: grid;
-    justify-content:center;
-    align-items: center;
-}
-
-.card-leitura {
-    font-size: 1px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid white;
-    border-radius: 33px;
     justify-content: center;
-    height: 500px;
-    width: 360px; /* 340px em 16px de font-size */
+    gap: 50px;
 }
-
-.esquerdo {
-  
-    height: 100%;
-    
-}
-.esquerdo img {
-
+.leitura-card img {
     border-radius: 33px;
-    width: auto;
-    height: 100%;
-    max-height: 100%;
     max-width: 100%;
     object-fit: fill;
 }
-.wrapper-direito {
-   
-    line-height: 28px;
-    margin-top: 20px;
-    z-index: 2;
-    margin-left: 50px;
-    margin-bottom: 0px;
-    font-size: 8px;
-    color: white;
+.leitura-card {
+    border: 1px solid blue;
+    width: 15rem;
+    border-radius: 33px;
+    border: 1px solid white;
+    position: relative;
 }
-.wrapper-direito p {
+.card-thumb {
+    height: 100%;
+}
+.card-info {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    border-radius: 33px;
+    bottom: 0px;
+    background-image: linear-gradient(
+            45deg,
+            hsl(240deg 100% 20%) 0%,
+            hsl(289deg 100% 21%) 11%,
+            hsl(315deg 100% 27%) 22%,
+            hsl(329deg 100% 36%) 33%,
+            hsl(337deg 100% 43%) 44%,
+            hsl(357deg 91% 59%) 56%,
+            hsl(17deg 100% 59%) 67%,
+            hsl(34deg 100% 53%) 78%,
+            hsl(45deg 100% 50%) 89%,
+            hsl(55deg 100% 50%) 100% );
+        }
+
+.card-info-itens {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.card-info-itens p {
     color: rgb(131, 134, 134);
-    font-size: 12px;
+    font-size: 8px;
 }
-.wrapper-direito h5 {
-    font-size: 14px;
+.card-info-itens h5 {
+    font-size: 10px;
     color: rgb(189, 194, 194);
 }
-.wrapper-direito h3 {
-    font-size: 18px;
+.card-info-itens h3 {
+    font-size: 14px;
     color: rgb(255, 255, 255);
 }
-.direito {
-    border-radius: 33px;
-   
-    position: absolute;
-    background-image: linear-gradient(
-        45deg,
-        hsl(240deg 100% 20%) 0%,
-        hsl(289deg 100% 21%) 11%,
-        hsl(315deg 100% 27%) 22%,
-        hsl(329deg 100% 36%) 33%,
-        hsl(337deg 100% 43%) 44%,
-        hsl(357deg 91% 59%) 56%,
-        hsl(17deg 100% 59%) 67%,
-        hsl(34deg 100% 53%) 78%,
-        hsl(45deg 100% 50%) 89%,
-        hsl(55deg 100% 50%) 100%
-      );
-    z-index: 1;
-    width: 100%;
-    bottom: 0px;
-    height: 250px;
-    
-    
-}
+
+
+
+
+/*  */
 .menu {
-    z-index: 22;
+    z-index: 2;
     position: fixed;
-    width:170px;
+    width:190px;
     display: flex;
     background-color: rgb(62, 70, 75);
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
@@ -111,29 +98,22 @@ a, ul, li {
     bottom: 20px;
     transform: translate(-50%, -50%);
 }
-
-.menu .options{
-    display: flex;
-    gap: 12px;
-    z-index: 999;
-    bottom: 37px;
-    
-  }
-  .menu a {
+.menu a {
     display: block;
-  }
-  .menu-link {
+}
+.menu .options {
+    display: flex;
+    bottom: 37px;
+}
+.menu-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8px;
+    padding: 10px;
     border-radius: 50%;
-    color: var(--white);
-  }
-  .menu-link.active {
-    background-color: rgb(244, 244, 247);
-  }
-  .menu-link:hover {
-    background-color: var(--black);
+    color: white;
+}
+.menu-link:hover {
+    background-color: black;
   }
 
