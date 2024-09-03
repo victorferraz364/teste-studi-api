@@ -24,23 +24,27 @@ li, a {
 
 .leituras-section {
     display: grid;
-    justify-content: center;
+    grid-template-columns: 1fr;
+    justify-content: end;
     gap: 50px;
+}
+
+.leitura-card {
+    border: 1px solid blue;
+    width: 20rem;
+    border-radius: 33px;
+    border: 1px solid white;
+    position: relative;
+    margin: 0 auto;
 }
 .leitura-card img {
     border-radius: 33px;
     max-width: 100%;
     object-fit: fill;
 }
-.leitura-card {
-    border: 1px solid blue;
-    width: 15rem;
-    border-radius: 33px;
-    border: 1px solid white;
-    position: relative;
-}
 .card-thumb {
     height: 100%;
+    max-width: 100%;
 }
 .card-info {
     width: 100%;
@@ -76,11 +80,23 @@ li, a {
     color: rgb(189, 194, 194);
 }
 .card-info-itens h3 {
-    font-size: 14px;
+    font-size: 1rem;
     color: rgb(255, 255, 255);
 }
 
+/* Responsividade */
+@media (max-width: 768px) {
+    .leitura-card {
+        width: 100%;
+        max-width: 18rem;
+    }
+}
 
+@media (max-width: 480px) {
+    .leitura-card {
+        max-width: 16rem;
+    }
+}
 
 
 /*  */
